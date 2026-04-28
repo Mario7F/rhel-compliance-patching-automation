@@ -1,1 +1,27 @@
 
+---
+
+- name: Perform basic compliance validation
+  hosts: all
+  become: yes
+
+  tasks:
+
+  - name: Check SELinux status
+    ansible.builtin.command: getenforce
+    register: selinux_status
+
+  - name: Diplay SELinux status
+    ansible.builtin.debug:
+      msg: "SELinux is {{ selinux_status.stdout }}"
+
+  - name: Gather service facts
+    ansible.builtin.service_facts:
+
+  - name: Diplay firewalld status
+    ansible.builtin.debug:
+      msg: "firewalld is {{ ansible_facts.services['firewalld.service'].state }}"
+
+  - name: Display auditd status
+    ansible.builtin.debug:
+      msg: "auditd is {{ ansible_facts.services['auditd.service'].state }}"
