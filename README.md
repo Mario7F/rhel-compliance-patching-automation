@@ -60,3 +60,32 @@ The project ensures systems remain aligned with expected operational and securit
 - Red Hat Enterprised Linux 9
 - Multiple target systems
 - Enterprised Linux service validation and remediation
+
+## Technologies Used
+
+- Ansible Core
+- YAML
+- Linux System Administration
+- RHEL 9
+- CentOS
+- SSH
+- systemd
+- SELinux
+- firewalld
+- auditd
+- chronyd
+- Bash
+- Troubleshooting
+
+## Proof of Work
+
+Below are terminal outputs demonstrating the automation running across RHEL 9 systems
+
+More detail information along with troubleshooting in the "screenshots" folder
+
+
+### Service Validation
+
+<img width="1171" height="667" alt="Screenshot 2026-04-26 at 11 16 11 PM" src="https://github.com/user-attachments/assets/71e20fcb-5b03-42c2-90e6-fa2d694317ee" />
+
+
