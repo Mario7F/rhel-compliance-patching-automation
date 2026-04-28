@@ -30,9 +30,13 @@
 
 ### Now that both machines are pingable - I am able to move forward in the next step in the process which is to confirm the compliance of these machines running the playbook
 
-<img width="1051" height="282" alt="Screenshot 2026-04-26 at 11 14 13 PM" src="https://github.com/user-attachments/assets/06ff730c-57e4-4d69-ad24-d8b88b393792" />
 
 <img width="1049" height="74" alt="Screenshot 2026-04-26 at 11 13 33 PM" src="https://github.com/user-attachments/assets/e718869c-8e32-48fd-81ea-cd77c77b27d9" />
+
+
+### Ran into another issue - However I was able to quickly spot the adjustment to the ansible.cfg that was needed - the stdout_callback needed to be set to default
+
+<img width="1051" height="282" alt="Screenshot 2026-04-26 at 11 14 13 PM" src="https://github.com/user-attachments/assets/06ff730c-57e4-4d69-ad24-d8b88b393792" />
 
 
 
