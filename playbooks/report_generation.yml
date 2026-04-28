@@ -1,1 +1,55 @@
 
+
+--- 
+
+- name: Generate Linux compliance report
+  hosts: all
+  become: yes
+
+
+  tasks:
+
+    - name: Check SELinux status
+      ansible.builtin.command: getenforce
+      register: selinux_status
+      changed_when: false
+
+    - name: Get kernel version
+      ansible.builtin.command: uname -r
+      register: kernel_version
+      changed_when: false
+
+    - name: Gather status fact
+      ansible.builtin.service_facts:
+
+    - name: Set firewall status fact
+      ansible.builtin.set_fact:
+        firewall_status: >-
+          {{
+            ansible_facts.services['firewalld.service'].state
+            if 'firewalld.service' in ansible_facts.services
+            else 'NOT INSTALLED'
+          }} 
+    - name: Set auditd status fact
+      ansible.builtin.set_fact:
+        auditd_status: >-
+          {{ 
+            ansible_facts.services['auditd.service'].state
+            if 'auditd.service' in ansible_facts.services
+            else 'NOT INSTALLED' 
+          }}
+
+    - name: Create compliance report entry
+      ansible.builtin.blockinfile:
+        path: "{{ playbook_dir }}/../reports/compliance_report.txt"
+        create: yes
+        marker: ""
+        block: |
+          {{ inventory_hostname }}
+          ------------------------
+          SELinux: {{ selinux_status.stdout }}
+          Firewall: {{ firewall_status }}
+          Auditd: {{ auditd_status }}
+          Kernel: {{ kernel_version.stdout }}
+
+      delegate_to: localhost
