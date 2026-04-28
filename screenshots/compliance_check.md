@@ -39,6 +39,12 @@
 <img width="1051" height="282" alt="Screenshot 2026-04-26 at 11 14 13 PM" src="https://github.com/user-attachments/assets/06ff730c-57e4-4d69-ad24-d8b88b393792" />
 
 
+### Giving the playbook another run, I was able to run the playbook with no error message
+
+<img width="1171" height="667" alt="Screenshot 2026-04-26 at 11 16 11 PM" src="https://github.com/user-attachments/assets/a64f6afe-5197-489e-94a2-422633a6960d" />
+
+
+
 
 
 
