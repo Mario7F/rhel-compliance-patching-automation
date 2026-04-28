@@ -20,11 +20,21 @@
 
 <img width="1063" height="330" alt="Screenshot 2026-04-26 at 11 03 34 PM" src="https://github.com/user-attachments/assets/a906928d-34e2-4ca0-b784-65ef5c5dd97a" />
 
-## Noticing one server was pinged but the other didn't show as unreachable was a sign that server two was nested under server one so I had to adjust the formatting in order for it to ping both
+### Noticing one server was pinged but the other didn't show as unreachable was a sign that server two was nested under server one so I had to adjust the formatting in order for it to ping both
 
 <img width="1086" height="273" alt="Screenshot 2026-04-26 at 11 08 47 PM" src="https://github.com/user-attachments/assets/62138a35-0e06-41e2-9f45-cb3c1fedf4e0" />
 
+
 <img width="1052" height="311" alt="Screenshot 2026-04-26 at 11 10 57 PM" src="https://github.com/user-attachments/assets/ca2baca4-b06f-403c-a002-0f456539444f" />
+
+
+### Now that both machines are pingable - I am able to move forward in the next step in the process which is to confirm the compliance of these machines running the playbook
+
+<img width="1051" height="282" alt="Screenshot 2026-04-26 at 11 14 13 PM" src="https://github.com/user-attachments/assets/06ff730c-57e4-4d69-ad24-d8b88b393792" />
+
+<img width="1049" height="74" alt="Screenshot 2026-04-26 at 11 13 33 PM" src="https://github.com/user-attachments/assets/e718869c-8e32-48fd-81ea-cd77c77b27d9" />
+
+
 
 
 
