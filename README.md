@@ -26,7 +26,7 @@ We are required to verify the services below on a daily basis:
 - patch/update posture
 - kernel version consistency
 - required package presence
-- service uptime and enablement
+- service uptime and health
 
 Performing this manually across multiple systems increases the risk of configuration drift, missed findings, and delayed remediation.
 
