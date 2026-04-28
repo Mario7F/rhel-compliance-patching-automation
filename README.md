@@ -89,3 +89,23 @@ More detail information along with troubleshooting in the "screenshots" folder
 <img width="1171" height="667" alt="Screenshot 2026-04-26 at 11 16 11 PM" src="https://github.com/user-attachments/assets/71e20fcb-5b03-42c2-90e6-fa2d694317ee" />
 
 
+## Compliance Check
+
+<img width="1419" height="838" alt="Screenshot 2026-04-27 at 9 02 33 PM" src="https://github.com/user-attachments/assets/e6d2777f-e683-4dde-8ab2-42b48e7e1a38" />
+
+## Patching Validation 
+
+<img width="1517" height="839" alt="Screenshot 2026-04-27 at 9 14 03 PM" src="https://github.com/user-attachments/assets/3b0751ea-e55a-4045-84e6-bf720b8536f3" />
+
+<img width="1390" height="237" alt="Screenshot 2026-04-27 at 9 14 16 PM" src="https://github.com/user-attachments/assets/eb797bdf-2540-4414-b8ff-7d46199b213c" />
+
+## Compliance Report
+
+<img width="1450" height="468" alt="Screenshot 2026-04-27 at 9 57 35 PM" src="https://github.com/user-attachments/assets/281dd1ba-8d68-4305-9daa-f26a3100fb79" />
+
+## Remediation 
+
+<img width="1353" height="853" alt="Screenshot 2026-04-28 at 8 13 33 AM" src="https://github.com/user-attachments/assets/452b57b2-0528-4802-98ce-124935bf6b0e" />
+
+
+
