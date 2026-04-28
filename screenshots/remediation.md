@@ -12,7 +12,7 @@
 <img width="1309" height="836" alt="Screenshot 2026-04-28 at 8 03 16 AM" src="https://github.com/user-attachments/assets/743357b4-1867-49e6-905f-a0ab6de35bf6" />
 
 
-### The culprit was the builtin was spelt builin which gave the error message, after corrected I was able to run the playbook successfully.
+### The culprit was the ansible.builin.debug instead of ansible.builtin.debug which gave the error message, after corrected I was able to run the playbook successfully.
 
 <img width="1402" height="381" alt="Screenshot 2026-04-28 at 8 12 12 AM" src="https://github.com/user-attachments/assets/8ff7c124-7ea0-4190-8bfd-cd3fbb37d5b1" />
 
