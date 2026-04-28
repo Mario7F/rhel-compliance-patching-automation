@@ -1,1 +1,35 @@
 
+
+
+---
+
+- name: Validate critical Linux services
+  hosts: all
+  become: yes
+
+
+  vars:
+    services_to_check:
+      - chronyd.service
+      - auditd.service
+      - sshd.service
+      - firewalld.service
+      - rsyslog.service
+
+  tasks: 
+
+    - name: Gather service facts
+      ansible.builtin.service_facts:
+
+    - name: Check service status
+      ansible.builtin.service_facts:
+
+    - name: Check service status
+      ansible.builtin.debug:
+        msg: >
+          {{
+            ansible_facts.services[item].state
+            if item in ansible_facts.services
+            else "NOT INSTALLED"
+          }}
+      loop: "{{ services_to_check }}"
