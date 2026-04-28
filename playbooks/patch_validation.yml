@@ -1,1 +1,35 @@
 
+
+
+---
+
+- name: Validate patching and system update posture
+  hosts: all
+  become: yes
+
+  tasks: 
+
+    - name: Check for available package updates
+      ansible.builtin.command: yum check-update
+      register: update_check
+      changed_when: false
+      failed_when: false
+
+    - name: Diplays update check results
+      ansible.builtin.debug:
+        msg: "{{ inventory_hostname }} update check completed"
+
+    - name: Get current kernel version
+      ansible.builtin.command: unname -r
+      register: kernel_version
+      changed_when: false
+
+    - name: Get system uptime
+      ansible.builtin.command: uptime
+      register: system_uptime
+      changed_when: false
+
+    - name: Display uptime
+      ansible.builtin.debug:
+        msg: "{{ system_uptime.stdout }}"
+        
